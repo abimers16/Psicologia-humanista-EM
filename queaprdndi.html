@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Qué aprendí esta semana?</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #BDA6CE, #3a3a6a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.3rem;
+    }
+
+    nav {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h3 {
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: #e0d4ff;
+    }
+
+    .hero p {
+      text-align: justify;
+      font-size: 0.95rem;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.07);
+      padding: 18px;
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .card p {
+      text-align: justify;
+      font-size: 0.9rem;
+    }
+
+    ul, ol {
+      margin-top: 10px;
+      padding-left: 18px;
+      font-size: 0.9rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+
+    /* RESPONSIVE (pantallas grandes) */
+    @media(min-width: 768px) {
+
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+
+      nav {
+        text-align: right;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+      }
+    }
+
+    @media(min-width: 1024px) {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 style="text-align: left;">¿Qué aprendí esta semana?</h1>
+  <nav>
+    <p style="text-align: right;">UNAM<br>FES Iztacala<br>Psicología</p>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Psicología Humanista</h2>
+  <h3>Intencionalidad y Sentido</h3>
+
+  <p>
+    El ser humano no solo experimenta su realidad, sino que también le da significado a partir de su 
+      relación con sus deseos, su conciencia y sus decisiones. Más que entender la conducta como algo 
+      determinado, se plantea a la persona como un ser activo, capaz de orientar su vida, resignificar 
+      su historia y asumir la responsabilidad de lo que elige. Desde esta mirada, conceptos como la 
+      intencionalidad, el tiempo, el deseo y la voluntad se vuelven fundamentales para comprender cómo 
+      se construye el sentido de la experiencia
+  </p>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h3>1. La Intencionalidad</h3>
+    <p>
+      La intencionalidad se define como el concepto clave para comprender la relación entre el deseo y la voluntad, 
+        permitiendo orientarlos de manera integrada hacia un desear consciente y coherente. 
+        Según Rollo May, es la "estructura que da sentido a la experiencia", lo que implica que cada individuo 
+        configura el significado de sus vivencias a partir de su relación con el mundo, los otros y sus propios dilemas 
+        existenciales.<br></br> No se trata solo de una intención racional, sino de una base afectiva desde la cual nacen y se 
+        orientan todas las decisiones cotidianas. En términos prácticos, representa la totalidad de la dirección de los 
+        intereses y proyectos que el ser humano desarrolla para afirmar un valor que otorgue sentido a su existencia.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>2. Temporalidad</h3>
+    Para la psicología existencial, el tiempo fundamental es el presente continuo que se transforma 
+        constantemente en futuro.
+        <br></br>
+        
+        <ul style="list-style-type: disc; text-align: justify;">
+          
+          <li>El Futuro: Es un elemento implícito siempre presente, hacia el cual se dirige toda intencionalidad 
+        para actualizar el potencial creador.</li>
+          <br>
+          <li>El Pasado: No se omite, pero se entiende a partir de la orientación actual que la persona asume 
+        frente a sus necesidades afectivas históricas.</li>
+          <br>
+          <li>Relación Circular: El presente y el futuro forman un tiempo continuo donde el futuro se crea 
+        permanentemente desde el presente. El conflicto no surge solo por lo ocurrido en el pasado, sino 
+        porque en el presente la persona decide intencionalmente no abrirse a esa experiencia para evitar sufrir 
+        en el futuro.</li>
+
+        
+        </ul>
+  </div>
+
+  <div class="card">
+    <h3>3. El deseo y la Ganancia Afectivado</h3>
+    <p>
+      El acto de desear se refiere al proceso cotidiano de clarificar la vivencia y el significado de lo que 
+        se anhela, más que al resultado final de los actos.
+      <br></br>
+        
+        <ul style="list-style-type: disc;text-align: justify;">
+          
+          <li>Dinámica Dialéctica: Es un proceso en espiral donde, si el sentido obtenido no gratifica, el deseo 
+            se clarifica y reorienta de nuevo.
+</li>
+          <br>
+          <li>Sentido Patológico: Incluso en conductas destructivas o evasivas, existe una intencionalidad que 
+            busca una "ganancia afectiva". Por ejemplo, una persona con rasgos obsesivos puede usar su voluntad 
+            para controlar emociones y obtener así una sensación de seguridad o control, aunque esto le genere frustración.
+</li>
+          <br>
+          <li>Identificación con el Valor: Si la persona se siente satisfecha con el sentido obtenido al afirmar 
+            un valor, reforzará dicha conducta; de lo contrario, es probable que modifique el valor buscado para 
+            encontrar una ganancia afectiva que le satisfaga.
+</li>
+
+        
+        </ul>
+    </p>
+  </div>
+
+</section>
+
+  <section class="cards">
+
+  <div class="card">
+    <h3>4. Conciencia y Responsabilidad</h3>
+    <p>
+      El enfoque existencial busca "devolverle" al ser humano la responsabilidad de sus actos, 
+        criticando la visión de que somos "empujados" por fuerzas inconscientes ciegas.
+    </p>
+    <br>
+        
+        <ul style="list-style-type: disc; text-align: justify;">
+          
+          <li>El Inconsciente como Experiencia: Se define como aquellas potencialidades para conocer y 
+            experienciar lo que el individuo no puede o no quiere realizar. Es el acto de ocultar en el presente 
+            las propias valoraciones para facilitar decisiones y evitar responsabilidades exigentes.
+          </li>
+          <br>
+          <li>La Experiencia de Saber: Se hace énfasis en que la conciencia es la capacidad humana de no solo 
+            saber algo, sino de saber que se lo sabe.
+
+</li>
+          <br>
+          <li>La Experiencia de Saber: Se hace énfasis en que la conciencia es la capacidad humana de no solo 
+            saber algo, sino de saber que se lo sabe.
+
+</li>
+
+        
+        </ul>
+  </div>
+
+  <div class="card">
+    <h3>5. Integración de Deseo y Voluntad</h3>
+    La salud mental requiere que el deseo (lo afectivo) y la voluntad (lo racional/acción) se 
+        integren en una misma dirección.
+        <br></br>
+        
+        <ul style="list-style-type: disc;text-align: justify;">
+          
+          <li>La Voluntad como Títere: Sin conciencia de la intencionalidad, la voluntad puede convertirse 
+            en una defensa racionalista o intelectualizante que oculta los verdaderos deseos.
+</li>
+          <br>   
+          <li>Pasos para la Integración: Para una integración constructiva, se debe: 
+            1) usar la voluntad para contactar los deseos, 2) clarificar con cuáles se identifica la persona, 
+            y 3) usar la voluntad para afirmar esos deseos identificados.
+</li>
+          <br>
+          <li>Compromiso: Conocer y querer van juntos; si no se conoce algo, la voluntad no tiene contenido, 
+            y si no se quiere algo, nunca se llegará a conocer realmente.</li>
+
+        
+        </ul>
+  </div>
+
+  <div class="card">
+    <h3>6. Tendencias del Potencial y el Papel de la Ansiedad</h3>
+    <p>
+      La intencionalidad puede orientarse mediante tres tendencias principales:
+      <br></br>
+        
+        <ol type="1"; style="text-align: justify;">
+          
+          <li>Expansión: Tendencia al crecimiento, desarrollo del potencial, individualización y libertad.</li>
+          <br>
+          <li>Constricción: Tendencia adaptativa donde la persona se ajusta a las demandas del entorno 
+            sociocultural.
+</li>
+          <br>
+          <li>Centración: Integración sana que permite adaptarse al contexto sin renunciar al potencial creador.</li>
+
+        
+        </ol>
+    </p>
+  </div>
+
+</section>
+  
+  <section class="hero">
+ 
+
+  <p style="text-align: justify;">
+    La salud mental se entiende como un movimiento pendular que permite discriminar cuándo es apropiado individualizarse 
+  o adaptarse. En este proceso, la ansiedad normal es vista como una compañera constructiva del nacimiento de nuevas 
+  potencialidades; si se asume conscientemente, permite el paso hacia adelante, pero si es abrumadora, las posibilidades 
+  de obrar quedan borradas. En última instancia, la intencionalidad lleva a la persona a ser tan íntegra y honesta consigo 
+  misma como le sea posible. 
+  </p>
+</section>
+  
+  
+  
+<footer>
+  <p>Sánchez Mercado Abril · 2256</p>
+</footer>
+
+</body>
+</html>
